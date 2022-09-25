@@ -1,0 +1,65 @@
+{
+  "name": "react-pixi-widgets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config config/webpack.config.js --env env=development --open",
+    "build-sample": "webpack --config config/webpack.config.js --env env=production",
+    "build-widgets": "webpack --config config/webpack.widgets.js --env env=production",
+    "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\" \"./config/**/*.{js,jsx,ts,tsx,json}\" \".eslintrc.js\" \"tsconfig.json\" \".babelrc.json\" \".prettierrc.js\"",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" \"./config/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" \".eslintrc.js\" \"tsconfig.json\" \".babelrc.json\" \".prettierrc.js\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pakyinw/react-pixi-widgets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pakyinw/react-pixi-widgets/issues"
+  },
+  "homepage": "https://github.com/pakyinw/react-pixi-widgets#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@babel/runtime": "^7.18.9",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/node": "^18.7.21",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "5.33.0",
+    "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.0.3",
+    "jest-environment-jsdom": "^29.0.3",
+    "prettier": "^2.7.1",
+    "style-loader": "^3.3.1",
+    "ts-jest": "^29.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
