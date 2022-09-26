@@ -25,3 +25,5 @@ npm run build-sample
 ## Reference
 
 1. [React Templates](https://github.com/pakyinw/react-template-v18)
+
+2. [Dragonbones Assets from official site](https://github.com/DragonBones/Demos/tree/master/DragonBones%20Pro/Demos/mecha_1004d)

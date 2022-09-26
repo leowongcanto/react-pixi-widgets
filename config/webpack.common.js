@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpack = require('copy-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   resolve: {
@@ -43,7 +44,10 @@ module.exports = {
       template: path.resolve(__dirname, '..', './sample/index.html'),
     }),
     new CopyWebpack({
-      patterns: [{ from: 'sample', to: 'build' }],
+      patterns: [{ from: 'assets' }],
+    }),
+    new webpack.ProvidePlugin({
+      PIXI: 'pixi.js',
     }),
   ],
 }

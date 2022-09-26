@@ -1,6 +1,5 @@
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyWebpack = require('copy-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -40,17 +39,14 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '..', './build-widgets'),
-    filename: '[name].[chunkhash].js',
+    filename: 'index.js',
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, '..', './sample/index.html'),
-    }),
-    new CopyWebpack({
-      patterns: [{ from: 'sample', to: 'build' }],
-    }),
     new webpack.DefinePlugin({
       'process.env.name': JSON.stringify('widgets'),
+    }),
+    new webpack.ProvidePlugin({
+      PIXI: 'pixi.js',
     }),
   ],
 }
