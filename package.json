@@ -7,7 +7,7 @@
     "start": "webpack serve --config config/webpack.config.js --env env=development --open",
     "build-sample": "webpack --config config/webpack.config.js --env env=production",
     "build-widgets": "webpack --config config/webpack.widgets.js --env env=production",
-    "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\" \"./config/**/*.{js,jsx,ts,tsx,json}\" \".eslintrc.js\" \"tsconfig.json\" \".babelrc.json\" \".prettierrc.js\"",
+    "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\" \"./sample/**/*.{js,jsx,ts,tsx,json}\" \"./config/**/*.{js,jsx,ts,tsx,json}\" \".eslintrc.js\" \"tsconfig.json\" \".babelrc.json\" \".prettierrc.js\"",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" \"./config/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" \".eslintrc.js\" \"tsconfig.json\" \".babelrc.json\" \".prettierrc.js\"",
     "test": "jest"
   },
